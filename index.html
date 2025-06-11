@@ -1,12 +1,75 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>My First Page</title>
-</head>
-<body>
-  <h1>こんにちは、GitHub Pages！</h1>
-  <p>これは私のはじめての公開Webページです。</p>
-</body>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>自己紹介</title>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #74b9ff, #a29bfe);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                color: #333;
+            }
+            .container {
+                background: #ffffff;
+                padding: 40px 50px;
+                border-radius: 12px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                max-width: 600px;
+                width: 100%;
+                animation: fadeIn 1s ease-in-out;
+            }
+            h1 {
+                font-size: 32px;
+                color: #2d3436;
+                text-align: center;
+                margin-bottom: 25px;
+                border-bottom: 2px solid #74b9ff;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: bold;
+                color: #636e72;
+                margin-top: 25px;
+                margin-bottom: 8px;
+            }
+            .index {
+                font-size: 18px;
+                color: #2d3436;
+                line-height: 1.8;
+                margin: 0;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>自己紹介</h1>
+            <p class="header">氏名</p>
+            <p class="index">丹那伊織</p>
+            <p class="header">出身地</p>
+            <p class="index">神奈川県</p>
+            <p class="header">webプログラミングを受講する意気込み</p>
+            <p class="index">以前からjavascriptを用いたwebサービスの開発をする機会が増えてきたので、自分のスキルアップのために包括的な知識をあらためてこの授業で身につけて行きたいです</p>
+        </div>
+    </body>
 </html>
